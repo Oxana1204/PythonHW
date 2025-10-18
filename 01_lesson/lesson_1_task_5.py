@@ -1,13 +1,15 @@
-def num(num):
+def print_num(num):
     print(num, end='')
-    num(8)
-    num(8)
-    num(0)
-    num(0)
-    num(5)
-    num(5)
-    num(5)
-    num(3)
-    num(5)
-    num(3)
-    num(5)
+
+
+    print_num(8)
+    print_num(8)
+    print_num(0)
+    print_num(0)
+    print_num(5)
+    print_num(5)
+    print_num(5)
+    print_num(3)
+    print_num(5)
+    print_num(3)
+    print_num(5)
