@@ -3,9 +3,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 browser = webdriver.Chrome()
-browser.get(" http://uitestingplayground.com/dynamicid")
-blue_button = browser.find_element(By.CLASS_NAME, 'btn.btn-primary')
+browser.get("http://uitestingplayground.com/dynamicid")
+blue_button = browser.find_element(By.CSS_SELECTOR, 'button.btn-primary')
 blue_button.click()
-browser.quit()
 
 sleep(15)
+
+browser.quit()
