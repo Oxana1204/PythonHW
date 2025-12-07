@@ -68,8 +68,7 @@ class CheckOutStepOnePage:
         self.driver.find_element(*self.LAST_NAME_INPUT).send_keys(last_name)
 
     def fill_postal_code(self, postal_code):
-        (self.driver.find_element(*self.POSTAL_CODE_INPUT).send_keys /
-         (postal_code))
+        self.driver.find_element(*self.POSTAL_CODE_INPUT).send_keys (postal_code)
 
     def continue_checkout(self):
         self.driver.find_element(*self.CONTINUE_BUTTON).click()
